@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="media-query.css">
-
     </head>
     <body>
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top">
@@ -22,7 +22,9 @@
                             <a class="navbar-brand" href="index.html">PROJUDI</a>
                             <form class="d-flex search-form" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-color: black; background-color: rgba(255, 255, 255, 0.699);">
-                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                                <button class="btn btn-outline-primary" type="submit">
+                                    <span>Search</span>
+                                </button>
                             </form>
                             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -35,23 +37,22 @@
                                 <div class="offcanvas-body">
                                     <ul class="navbar-nav flex-grow-1 pe-3">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a>
+                                            <a class="nav-link" href="#home"><i class="bi bi-house"></i> Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html"><i class="bi bi-stars"></i> Project</a>
+                                            <a class="nav-link" href="#project"><i class="bi bi-stars"></i> Project</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html"><i class="bi bi-download"></i> Install</a>
+                                            <a class="nav-link" href="#Install"><i class="bi bi-download"></i>Install</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html"><i class="bi bi-boxes"></i> Features</a>
+                                            <a class="nav-link" href="#Features"><i class="bi bi-boxes"></i> Features</a>
                                         </li>
                                     </ul>
 
                                 </div>
                             </div>
                         </div>
-                        
                     </nav>
                 </section>
             </div>
@@ -65,68 +66,69 @@
                         <p class="lead test-muted">
                             Landing page for small project from IFPR 2024
                         </p>
-                        <p>
-                            <a href="" class="btn btn-outline-secondary my-2">
-                                <i class="bi bi-github"></i>Project from GitHub
-                            </a>
-                            <a href="" class="btn btn-outline-secondary my-2">
-                                <i class="bi bi-heart"></i>Project from GitHub
-                            </a>
+                        <a href="" class="btn btn-outline-primary">
+                            <i class="bi bi-github"></i><span>Project from GitHub</span>
+                        </a>
+                        <a href="" class="btn btn-outline-primary">
+                            <i class="bi bi-heart"></i><span>Project from GitHub</span>
+                        </a>
                         </p>
                     </div>
                 </div>
             </section>
             <div class="album bg-light">
-                <div class="container">
-                    <section class="section-arena" id="project">
-                        <div class="row row-cols-1 row-cols-md-3 g-3">
-                            <div class="col-md-12">
-                                <div class="section-title">
-                                    <h1 class="fw-light">
-                                        <i class="bi bi-stars"></i>The Project
-                                    </h1>
-                                </div>
-                                <div class="section-description">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, suscipit possimus optio ullam ab dolor at, architecto ducimus quisquam corporis accusamus ipsum reiciendis obcaecati itaque asperiores quaerat perspiciatis pariatur temporibus!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="section-separator">
-                        <hr>
+                <div class="section-area" id="project">
+                    <div class="section-title">
+                        <h1 class="fw-light">
+                            <i class="bi bi-stars"></i>The Project
+                        </h1>
                     </div>
-                    <section class="section-area">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <div class="col-md-12">
-                                <div class="section-title">
-                                    <h1 class="fw-light">
-                                        <i class="bi bi-download">Install</i>
-                                    </h1>
-                                </div>
-                                <div class="section-description">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellendus amet ipsam non voluptatum dicta, quas similique doloremque minus quo, adipisci aliquam doloribus placeat cumque esse quisquam nostrum, molestiae id. Ducimus iure doloribus cupiditate placeat aspernatur facilis expedita debitis adipisci non est autem eius maiores esse enim natus reprehenderit, vero illo inventore similique quisquam incidunt optio. Maiores quis incidunt at quam eius rerum! Veritatis non sint vel earum! Quia, sint officiis exercitationem ducimus saepe eaque aut voluptas aliquid accusamus laudantium praesentium fugiat deserunt dolorum consectetur soluta repellendus laboriosam eveniet, quo odio cupiditate eos ea. Quo perspiciatis eaque ex nulla odit necessitatibus quisquam earum nam eius. Distinctio quam facere maiores animi magni harum amet ad quae ducimus perspiciatis excepturi quaerat, temporibus dolores quia voluptas repellat voluptate dolor officiis repellendus officia, velit sapiente tempora provident minus. Ipsam quasi quis, cum fugit sapiente eligendi labore provident veniam culpa sequi quod dignissimos ratione at minus officiis. Voluptatibus a quia in laboriosam commodi amet, qui odio reiciendis? Quo dolorum quas, illo, fuga dolores laborum consectetur dolore quibusdam exercitationem eveniet pariatur, unde inventore neque nesciunt odit incidunt corporis. Amet cupiditate fuga laudantium? Quidem omnis molestiae cum inventore! Sint et vel possimus autem, soluta ea deserunt reiciendis ipsa explicabo ducimus minus perspiciatis alias, neque perferendis quidem aperiam, ullam temporibus nesciunt? Repellendus suscipit fuga repudiandae iste quam voluptatibus voluptas assumenda architecto, enim modi corrupti minima perspiciatis blanditiis explicabo incidunt, consequuntur culpa alias tempore eveniet minus, ipsa nisi voluptatum accusantium? Mollitia aliquid exercitationem corporis, assumenda doloribus nostrum porro aliquam ea quam atque velit necessitatibus molestias voluptas hic ipsam adipisci rem quisquam! Obcaecati, odio maiores. Ducimus ea vitae eaque exercitationem eos fugit harum iusto unde molestias dolorem praesentium nisi explicabo perspiciatis aut architecto, esse odit amet, eum, cumque voluptatum. Molestias voluptates accusamus aspernatur aut a perspiciatis laudantium. Modi maxime quibusdam exercitationem autem ratione vitae quos unde ipsa quaerat pariatur cumque voluptatum consectetur expedita ea nam id fuga consequatur, temporibus in commodi! Quibusdam accusamus consectetur itaque inventore! In odio, iusto nesciunt quia distinctio cupiditate eveniet earum harum reprehenderit molestias voluptates obcaecati doloremque similique iure esse ipsum maiores fugiat minus soluta facere porro corrupti doloribus. Aspernatur necessitatibus voluptatibus sed quisquam quas? Reprehenderit unde sed pariatur cupiditate. Sunt dolorum minima laudantium dignissimos aliquam eaque laborum nobis, accusamus beatae repellat, nihil nostrum voluptatum veniam quos nesciunt eligendi reprehenderit molestiae obcaecati autem consectetur architecto minus nulla amet! Praesentium laboriosam dolore voluptatum at iure, non provident ratione dolor! Quisquam aliquid recusandae exercitationem, a dolor rem unde fuga sit hic fugit at nisi? Quaerat et commodi itaque fugit sed quibusdam, numquam unde quis accusantium omnis cumque pariatur vel ipsa eum consequuntur atque explicabo minima? Non fuga eaque libero veniam quae dicta beatae in aperiam illo officia laboriosam sit, distinctio mollitia ipsum quibusdam corporis numquam totam nam exercitationem accusantium sequi sapiente voluptatem animi sed. Placeat, quibusdam! Tempora cum consequuntur neque impedit sapiente commodi optio! Explicabo numquam culpa laboriosam veniam, minus, a cumque ullam amet doloribus sed fuga odit esse quas, ratione nihil reprehenderit cupiditate aut rerum officiis repellendus.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <div class="section-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consectetur officiis minus dolorem voluptatibus, porro praesentium inventore iste magni laboriosam? Neque, corrupti molestias. Qui, sint! Obcaecati recusandae hic debitis ipsa harum molestiae consectetur expedita placeat, cupiditate corrupti quis quisquam deserunt assumenda mollitia esse nemo eos? Explicabo, ex praesentium hic molestiae ipsum nulla eaque eveniet dolorem tempora harum inventore pariatur quisquam neque adipisci ut quidem veritatis? Impedit fuga corrupti neque eos dolorum fugit quae perspiciatis excepturi minima natus unde omnis iure nisi aliquid nesciunt accusantium incidunt doloribus rem, eaque fugiat totam? Corrupti nam similique, cumque aliquam esse optio voluptatibus facilis saepe veniam? Sint, voluptatibus dignissimos rem neque quis nulla rerum quas labore nemo ipsum fuga nisi inventore dolor sapiente. Necessitatibus fugit beatae repellat atque nam laboriosam, veritatis delectus placeat repellendus eum dolore dolorum impedit a sint itaque ducimus mollitia? Harum inventore expedita dolorum a maxime quas perspiciatis. Incidunt quae qui minima, illum sapiente quo? Sint, ab necessitatibus adipisci fugit autem assumenda, nam, harum consequuntur dignissimos possimus distinctio id! A, tenetur quam aliquam saepe, impedit autem consequatur esse debitis nobis, numquam itaque dolor officia eos at sunt modi tempora ad quia. Numquam quas neque, corporis quam dolorem facilis non natus provident repellendus? Expedita fugit repellendus reiciendis perferendis cupiditate eligendi. Totam sed veritatis accusamus odio modi beatae voluptatum nulla ab. Nam esse quia deleniti tempore, repudiandae facere sapiente architecto! Dignissimos quos doloribus, vel itaque tempora obcaecati earum facere dolor inventore, consequuntur corrupti odit optio commodi. Hic deleniti nam dolore dignissimos pariatur expedita eos reiciendis maiores dolor, error facere dolores voluptates in distinctio earum. Odit vitae dolore magnam ipsa corporis, alias autem magni veritatis fugit iste minima maiores earum provident molestiae esse cupiditate ad praesentium! Aut atque numquam assumenda. Soluta voluptatem sunt maxime provident omnis obcaecati adipisci repellat quis rem eligendi. Excepturi, unde nulla.</p>
+                    </div>
+                </div>
+                <div class="section-separator">
+                    <hr>
+                </div>
+                <div class="section-area" id="Install">
+                    <div class="section-title">
+                        <h1 class="fw-light">
+                            <i class="bi bi-download"></i>Install
+                        </h1>
+                    </div>
+                    <div class="section-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consectetur officiis minus dolorem voluptatibus, porro praesentium inventore iste magni laboriosam? Neque, corrupti molestias. Qui, sint! Obcaecati recusandae hic debitis ipsa harum molestiae consectetur expedita placeat, cupiditate corrupti quis quisquam deserunt assumenda mollitia esse nemo eos? Explicabo, ex praesentium hic molestiae ipsum nulla eaque eveniet dolorem tempora harum inventore pariatur quisquam neque adipisci ut quidem veritatis? Impedit fuga corrupti neque eos dolorum fugit quae perspiciatis excepturi minima natus unde omnis iure nisi aliquid nesciunt accusantium incidunt doloribus rem, eaque fugiat totam? Corrupti nam similique, cumque aliquam esse optio voluptatibus facilis saepe veniam? Sint, voluptatibus dignissimos rem neque quis nulla rerum quas labore nemo ipsum fuga nisi inventore dolor sapiente. Necessitatibus fugit beatae repellat atque nam laboriosam, veritatis delectus placeat repellendus eum dolore dolorum impedit a sint itaque ducimus mollitia? Harum inventore expedita dolorum a maxime quas perspiciatis. Incidunt quae qui minima, illum sapiente quo? Sint, ab necessitatibus adipisci fugit autem assumenda, nam, harum consequuntur dignissimos possimus distinctio id! A, tenetur quam aliquam saepe, impedit autem consequatur esse debitis nobis, numquam itaque dolor officia eos at sunt modi tempora ad quia. Numquam quas neque, corporis quam dolorem facilis non natus provident repellendus? Expedita fugit repellendus reiciendis perferendis cupiditate eligendi. Totam sed veritatis accusamus odio modi beatae voluptatum nulla ab. Nam esse quia deleniti tempore, repudiandae facere sapiente architecto! Dignissimos quos doloribus, vel itaque tempora obcaecati earum facere dolor inventore, consequuntur corrupti odit optio commodi. Hic deleniti nam dolore dignissimos pariatur expedita eos reiciendis maiores dolor, error facere dolores voluptates in distinctio earum. Odit vitae dolore magnam ipsa corporis, alias autem magni veritatis fugit iste minima maiores earum provident molestiae esse cupiditate ad praesentium! Aut atque numquam assumenda. Soluta voluptatem sunt maxime provident omnis obcaecati adipisci repellat quis rem eligendi. Excepturi, unde nulla.</p>
+                    </div>
+                </div>
+                <div class="section-separator">
+                    <hr>
+                </div>
+                <div class="section-area" id="Features">
+                    <div class="section-title">
+                        <h1 class="fw-light">
+                            <i class="bi bi-boxes"></i>Features
+                        </h1>
+                    </div>
+                    <div class="section-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consectetur officiis minus dolorem voluptatibus, porro praesentium inventore iste magni laboriosam? Neque, corrupti molestias. Qui, sint! Obcaecati recusandae hic debitis ipsa harum molestiae consectetur expedita placeat, cupiditate corrupti quis quisquam deserunt assumenda mollitia esse nemo eos? Explicabo, ex praesentium hic molestiae ipsum nulla eaque eveniet dolorem tempora harum inventore pariatur quisquam neque adipisci ut quidem veritatis? Impedit fuga corrupti neque eos dolorum fugit quae perspiciatis excepturi minima natus unde omnis iure nisi aliquid nesciunt accusantium incidunt doloribus rem, eaque fugiat totam? Corrupti nam similique, cumque aliquam esse optio voluptatibus facilis saepe veniam? Sint, voluptatibus dignissimos rem neque quis nulla rerum quas labore nemo ipsum fuga nisi inventore dolor sapiente. Necessitatibus fugit beatae repellat atque nam laboriosam, veritatis delectus placeat repellendus eum dolore dolorum impedit a sint itaque ducimus mollitia? Harum inventore expedita dolorum a maxime quas perspiciatis. Incidunt quae qui minima, illum sapiente quo? Sint, ab necessitatibus adipisci fugit autem assumenda, nam, harum consequuntur dignissimos possimus distinctio id! A, tenetur quam aliquam saepe, impedit autem consequatur esse debitis nobis, numquam itaque dolor officia eos at sunt modi tempora ad quia. Numquam quas neque, corporis quam dolorem facilis non natus provident repellendus? Expedita fugit repellendus reiciendis perferendis cupiditate eligendi. Totam sed veritatis accusamus odio modi beatae voluptatum nulla ab. Nam esse quia deleniti tempore, repudiandae facere sapiente architecto! Dignissimos quos doloribus, vel itaque tempora obcaecati earum facere dolor inventore, consequuntur corrupti odit optio commodi. Hic deleniti nam dolore dignissimos pariatur expedita eos reiciendis maiores dolor, error facere dolores voluptates in distinctio earum. Odit vitae dolore magnam ipsa corporis, alias autem magni veritatis fugit iste minima maiores earum provident molestiae esse cupiditate ad praesentium! Aut atque numquam assumenda. Soluta voluptatem sunt maxime provident omnis obcaecati adipisci repellat quis rem eligendi. Excepturi, unde nulla.</p>
+                    </div>
                 </div>
             </div>
         </main>
-     <footer class="text-muted py-5">
-        <div class="container">
-            <div class="section-separator">
-                <hr>
+        <footer class="text-muted py-5">
+            <div class="container">
+                <div class="section-separator" s>
+                    <hr>
+                </div>
+                <p class="author mb-1">
+                    Author: Gabriel Othavio da Rocha Achitti<br>
+                    Licence: Free
+                </p>
+                <p class="location mb-0">
+                    Main in Brasil &#10084;
+                </p>
             </div>
-            <p class="mb-1">
-                author: Gabriel Othavio da Rocha Achitti<br>
-                Lecence: Free
-            </p>
-            <p class="mb-0">
-                <br>
-                main in Brasil &#10084;
-            </p>
-        </div>
-     </footer>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
